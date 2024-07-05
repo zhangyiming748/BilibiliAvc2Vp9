@@ -37,8 +37,8 @@ func ToVP9(fp string) {
 	output, err := cmd.CombinedOutput()
 	if err != nil {
 		log.Printf("命令%v执行失败%v有可能不包括字幕\n", cmd.String(), err)
-		log.Printf("开始执行命令%v\n", cmd.String())
 		cmd = exec.Command("ffmpeg", "-y", "-i", fp, "-map", "0:v:0", "-map", "0:a:0", "-c:v", "libvpx-vp9", "-crf", crf, "-c:a", "libopus", "-vbr", "on", out)
+		log.Printf("开始执行命令%v\n", cmd.String())
 		if output, err = cmd.CombinedOutput(); err != nil {
 			log.Fatalf("命令不带字幕%v执行失败%v\n", cmd.String(), err)
 		} else {

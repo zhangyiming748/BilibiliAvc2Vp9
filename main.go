@@ -10,7 +10,7 @@ import (
 
 func main() {
 	p := new(constant.Param)
-	p.SetRoot("D:\\bilibili\\星光明007")
+	p.SetRoot("D:\\bilibili\\张栋梁")
 	if root := os.Getenv("root"); root != "" {
 		p.SetRoot(root)
 	}
