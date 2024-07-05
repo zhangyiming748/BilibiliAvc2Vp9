@@ -1,4 +1,4 @@
-FROM golang:1.22.4-bookworm
+FROM golang:1.22.5-bookworm
 LABEL authors="zen"
 # 更换国内源
 COPY debian.sources /etc/apt/sources.list.d/
