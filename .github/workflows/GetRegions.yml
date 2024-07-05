@@ -1,0 +1,15 @@
+name: Get Regions
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+jobs:
+  GetRegions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: curl
+        run: |
+          curl cip.cc
+          cat /etc/apt/sources.list
+          ls /etc/apt/sources.list.d

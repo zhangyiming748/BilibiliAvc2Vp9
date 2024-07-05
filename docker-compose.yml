@@ -1,0 +1,11 @@
+name: vp9
+services:
+  avif:
+    stdin_open: true
+    tty: true
+    container_name: vp9
+    volumes:
+      - /d/wbb:/data # 你的视频所在文件夹
+    environment:
+      - root=/data # 容器中指定处理视频的文件夹 不用修改
+    image: zhangyiming748/bilibili_avc2vp9:latest # 指定生成的镜像名称和标签
