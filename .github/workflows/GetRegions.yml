@@ -8,6 +8,10 @@ jobs:
   GetRegions:
     runs-on: ubuntu-latest
     steps:
+      - name: check debug
+        run: ls ${{ secrets.ACTIONS_RUNNER_DEBUG }}
+      - name: find
+        run: find . -name "runner-diagnostic-logs"
       - name: curl
         run: |
           curl cip.cc
