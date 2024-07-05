@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestName(t *testing.T) {
+func TestAllFiles(t *testing.T) {
 	p := &constant.Param{
 		Root: "D:\\bilibili\\张栋梁",
 	}

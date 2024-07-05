@@ -1,6 +1,6 @@
 github.com/h2non/filetype v1.1.3 h1:FKkx9QbD7HR/zjK1Ia5XiBsq9zdLi5Kf3zGyFTAFkGg=
 github.com/h2non/filetype v1.1.3/go.mod h1:319b3zT68BvV+WRj7cwy856M2ehB3HqNOt6sy1HndBY=
-github.com/zhangyiming748/FastMediaInfo v0.0.5 h1:iDPzQ/B/iB5J0pIf+VU0+nYjEBmwh8Lzh+qAmNx9mo4=
-github.com/zhangyiming748/FastMediaInfo v0.0.5/go.mod h1:vO7MyXVTh/P4DRIuBdFXP14kV5J54Jqemem+xtsC3HI=
+github.com/zhangyiming748/FastMediaInfo v0.0.6 h1:UDdYPg4DVOTB3leC/I07KsfrQSgh9/f92oCgLrbdxfI=
+github.com/zhangyiming748/FastMediaInfo v0.0.6/go.mod h1:vO7MyXVTh/P4DRIuBdFXP14kV5J54Jqemem+xtsC3HI=
 github.com/zhangyiming748/lumberjack v0.0.1 h1:/r1XMBfGVZ/ZrRU56vl0aKeVddidi3388ETLLCWxoW4=
 github.com/zhangyiming748/lumberjack v0.0.1/go.mod h1:11eemyl+ecJVHsV0uA62hHy+geuwthU0Y2owuM9TXdI=
