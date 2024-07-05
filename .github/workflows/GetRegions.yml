@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check debug
-        run: ls ${{ secrets.ACTIONS_RUNNER_DEBUG }}
+        run: echo ${{ secrets.ACTIONS_RUNNER_DEBUG }}
       - name: find
         run: find . -name "runner-diagnostic-logs"
       - name: curl
