@@ -11,7 +11,7 @@ jobs:
       - name: check debug
         run: echo ${{ secrets.ACTIONS_RUNNER_DEBUG }}
       - name: find
-        run: find . -name "runner-diagnostic-logs"
+        run: ls runner-diagnostic-logs
       - name: curl
         run: |
           curl cip.cc
