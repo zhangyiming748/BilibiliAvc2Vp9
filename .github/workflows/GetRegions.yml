@@ -12,4 +12,11 @@ jobs:
         run: |
           curl cip.cc
           cat /etc/apt/sources.list
-          ls /etc/apt/sources.list.d
+          sudo apt tree 
+          tree ${{ github.workspace }}
+      - name: Publish reports
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: jfoa-build-reports-${{ runner.os }}
+          path: runner/build/reports/
