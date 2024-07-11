@@ -30,6 +30,9 @@ func ToVP9(fp string) {
 
 	if mi.Video.Format == "AVC" {
 		log.Printf("文件%v是h264格式,转换\n", fp)
+	} else if mi.Video.Format == "VP9" || mi.Video.CodecID == "V_VP9" {
+		log.Printf("文件%v是vp9格式,跳过\n", fp)
+		return
 	} else {
 		log.Printf("文件%v不是h264格式,无需转换\n", fp)
 		return
